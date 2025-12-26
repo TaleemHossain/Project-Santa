@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,12 +11,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Vector2 groundCheckOffset = Vector2.zero;
+    [Header("Components")]
+    [SerializeField] private GameObject holder;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
     private Animator animator;
     float horizontal;
     bool isGrounded = false;
+    bool facingLeft = true;
 
     void Start()
     {
@@ -62,12 +66,18 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = true;
             capsuleCollider.offset = new Vector2(Mathf.Abs(capsuleCollider.offset.x), capsuleCollider.offset.y);
             groundCheckOffset.x = Mathf.Abs(groundCheckOffset.x);
+            holder.transform.localPosition = new(-Mathf.Abs(holder.transform.localPosition.x), holder.transform.localPosition.y, holder.transform.localPosition.z);
+            holder.transform.localScale = new(-math.abs(holder.transform.localScale.x), holder.transform.localScale.y, holder.transform.localScale.z);
+            facingLeft = false;
         }
         else if (horizontal > 0)
         {
             spriteRenderer.flipX = false;
             capsuleCollider.offset = new Vector2(-Mathf.Abs(capsuleCollider.offset.x), capsuleCollider.offset.y);
             groundCheckOffset.x = -Mathf.Abs(groundCheckOffset.x);
+            holder.transform.localPosition = new(Mathf.Abs(holder.transform.localPosition.x), holder.transform.localPosition.y, holder.transform.localPosition.z);
+            holder.transform.localScale = new(math.abs(holder.transform.localScale.x), holder.transform.localScale.y, holder.transform.localScale.z);
+            facingLeft = true;
         }
     }
     public void OnJump(InputAction.CallbackContext context)
@@ -77,5 +87,13 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
         }
+    }
+    public bool IsGrounded()
+    {
+        return isGrounded;
+    }
+    public bool IsFacingLeft()
+    {
+        return facingLeft;
     }
 }

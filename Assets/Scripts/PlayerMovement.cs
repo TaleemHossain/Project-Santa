@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public GameObject dashRocket;
     [SerializeField] private float rocketSpeed = 10f;
     [SerializeField] private float rocketSteerSpeed = 5f;
+    [SerializeField] private float miniUpForce = 2f;
     private Vector2 RocketDir = Vector2.zero;
     private GameObject Rocket = null;
     private Rigidbody2D rb;
@@ -81,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 inputVector = context.ReadValue<Vector2>().normalized;
         horizontal = inputVector.x;
         vertical = inputVector.y;
-        
+
         if (Mathf.Abs(horizontal) < 0.05f)
         {
             horizontal = 0;
@@ -89,8 +90,12 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            animator.SetBool("Moving", true);
+            if (!inRocket)
+            {
+                animator.SetBool("Moving", true);
+            }
         }
+        if (inRocket) animator.SetBool("Moving", false);
 
         if (Mathf.Abs(vertical) < 0.05f)
         {
@@ -150,7 +155,10 @@ public class PlayerMovement : MonoBehaviour
         if (inRocket) return;
         inRocket = true;
         if (code == 0) Rocket = jumpRocket;
-        else if (code == 1) Rocket = dashRocket;
+        else if (code == 1) {
+            Rocket = dashRocket;
+            rb.AddForce(Vector2.up * miniUpForce, ForceMode2D.Impulse);
+        }
         Rocket.SetActive(true);
         rb.gravityScale = 0;
         if (code == 0)

@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 147401145}
   m_Layer: 6
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9199,6 +9199,7 @@ GameObject:
   - component: {fileID: 961891382}
   - component: {fileID: 961891383}
   - component: {fileID: 961891384}
+  - component: {fileID: 961891385}
   m_Layer: 0
   m_Name: DashRocket
   m_TagString: Untagged
@@ -9215,10 +9216,11 @@ Transform:
   m_GameObject: {fileID: 961891381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8262506, y: -0.11937451, z: 0}
+  m_LocalPosition: {x: -1.8418756, y: -0.9943745, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 982564660}
   m_Father: {fileID: 1765683057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &961891383
@@ -9310,8 +9312,53 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.7, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 1.85, y: 0}
+  m_Radius: 0.3
+--- !u!114 &961891385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961891381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bd7790f9d26184cb8e3c4a73bfe342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 8173196978250570767, guid: 2aa1ad0dbc31ffc40a034c34a8809662, type: 3}
+  CollisionPoint: {fileID: 982564659}
+--- !u!1 &982564659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982564660}
+  m_Layer: 0
+  m_Name: Exp Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982564660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982564659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 961891382}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1102948680
 GameObject:
   m_ObjectHideFlags: 0
@@ -11449,6 +11496,7 @@ GameObject:
   - component: {fileID: 1495119399}
   - component: {fileID: 1495119401}
   - component: {fileID: 1495119400}
+  - component: {fileID: 1495119402}
   m_Layer: 0
   m_Name: JumpRocket
   m_TagString: Untagged
@@ -11468,7 +11516,8 @@ Transform:
   m_LocalPosition: {x: -0.46687555, y: 0.6150005, z: 1}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1612865946}
   m_Father: {fileID: 1765683057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!58 &1495119400
@@ -11505,8 +11554,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.7, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 1.9, y: 0}
+  m_Radius: 0.3
 --- !u!212 &1495119401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11562,6 +11611,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1495119402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495119398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bd7790f9d26184cb8e3c4a73bfe342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 8173196978250570767, guid: 2aa1ad0dbc31ffc40a034c34a8809662, type: 3}
+  CollisionPoint: {fileID: 1612865945}
+--- !u!1 &1612865945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612865946}
+  m_Layer: 0
+  m_Name: Exp Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1612865946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612865945}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1495119399}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765683056
 GameObject:
   m_ObjectHideFlags: 0
@@ -12095,6 +12189,7 @@ MonoBehaviour:
   dashRocket: {fileID: 961891381}
   rocketSpeed: 10
   rocketSteerSpeed: 5
+  miniUpForce: 2
   inRocket: 0
   canUseAbility: 1
 --- !u!95 &2132231331

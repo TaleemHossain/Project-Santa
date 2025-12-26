@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    CircleCollider2D col;
+    [SerializeField] GameObject explosionPrefab;
+    [SerializeField] GameObject CollisionPoint;
+    PlayerMovement playerMovement;
     void Start()
     {
-        
+        playerMovement = transform.GetComponentInParent<PlayerMovement>();
+        col = transform.GetComponent<CircleCollider2D>();
     }
-
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.CompareTag("Ground") || collision.CompareTag("Enemy") || collision.CompareTag("Breakable"))
+        {
+            GameObject explosion = Instantiate(explosionPrefab, CollisionPoint.transform.position, Quaternion.Euler(0f, 0f, 0f));
+            explosion.transform.parent = collision.transform;
+            playerMovement.ExitRocketState();
+        }
     }
 }

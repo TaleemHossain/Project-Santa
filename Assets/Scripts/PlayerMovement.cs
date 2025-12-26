@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
+    private Animator animator;
     float horizontal;
     bool isGrounded = false;
 
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         rb = transform.GetComponent<Rigidbody2D>();
         spriteRenderer = transform.GetComponent<SpriteRenderer>();
         capsuleCollider = transform.GetComponent<CapsuleCollider2D>();
+        animator = transform.GetComponent<Animator>();
     }
     void Update()
     {
@@ -46,6 +48,15 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 inputVector = context.ReadValue<Vector2>().normalized;
         horizontal = inputVector.x;
+        if (Mathf.Abs(horizontal) < 0.05f)
+        {
+            horizontal = 0;
+            animator.SetBool("Moving", false);
+        }
+        else
+        {
+            animator.SetBool("Moving", true);
+        }
         if (horizontal < 0)
         {
             spriteRenderer.flipX = true;
@@ -64,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            animator.SetTrigger("Jump");
         }
     }
 }

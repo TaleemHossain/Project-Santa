@@ -1,10 +1,16 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerItems : MonoBehaviour
 {
-    int jumpGiftCount = 0;
-    int dashGiftCount = 0;
+    [SerializeField] int jumpGiftCount = 0;
+    [SerializeField] int dashGiftCount = 0;
     [SerializeField] BoxCollider2D collider2d;
+    PlayerMovement playerMovement;
+    public void Start()
+    {
+        playerMovement = transform.GetComponent<PlayerMovement>();
+    }
     public void AddJumpGift()
     {
         jumpGiftCount++;
@@ -15,19 +21,52 @@ public class PlayerItems : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Triggered with " + other.name);
-        if(other.GetComponent<IItems>() != null)
+        if (other.GetComponent<IItems>() != null)
         {
             IItems item = other.GetComponent<IItems>();
-            if(other.GetComponent<JumpGift>() != null)
+            if (other.GetComponent<JumpGift>() != null)
             {
                 AddJumpGift();
             }
-            else if(other.GetComponent<DashGift>() != null)
+            else if (other.GetComponent<DashGift>() != null)
             {
                 AddDashGift();
             }
             item.Collect();
+        }
+    }
+    public void OnJumpGift(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (!playerMovement.canUseAbility) return;
+            if (jumpGiftCount > 0)
+            {
+                jumpGiftCount--;
+                playerMovement.canUseAbility = false;
+                playerMovement.EnterRocketState(0);
+            }
+        }
+        else if (context.canceled)
+        {
+            playerMovement.ExitRocketState();
+        }
+    }
+    public void OnDashGift(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (!playerMovement.canUseAbility) return;
+            if (dashGiftCount > 0)
+            {
+                dashGiftCount--;
+                playerMovement.canUseAbility = false;
+                playerMovement.EnterRocketState(1);
+            }
+        }
+        else if (context.canceled)
+        {
+            playerMovement.ExitRocketState();
         }
     }
 }

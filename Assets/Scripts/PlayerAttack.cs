@@ -12,8 +12,8 @@ public class PlayerAttack : MonoBehaviour
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
-        Debug.Log("Attack input received");
         if(!canAttack) return;
+        if(playerMovement.inRocket) return;
         if (context.performed && playerMovement.IsGrounded())
         {
             animator.SetTrigger("GroundAttack");

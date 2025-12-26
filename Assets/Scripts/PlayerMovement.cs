@@ -1,4 +1,7 @@
 using Unity.Mathematics;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,20 +10,30 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float normalGravityScale = 5f;
     [Header("Ground Check")]
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Vector2 groundCheckOffset = Vector2.zero;
     [Header("Components")]
     [SerializeField] private GameObject holder;
+    [Header("Rockets")]
+    [SerializeField] public GameObject jumpRocket;
+    [SerializeField] public GameObject dashRocket;
+    [SerializeField] private float rocketSpeed = 10f;
+    [SerializeField] private float rocketSteerSpeed = 5f;
+    private Vector2 RocketDir = Vector2.zero;
+    private GameObject Rocket = null;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
     private Animator animator;
     float horizontal;
+    float vertical;
     bool isGrounded = false;
     bool facingLeft = true;
-
+    public bool inRocket = false;
+    public bool canUseAbility = true;
     void Start()
     {
         rb = transform.GetComponent<Rigidbody2D>();
@@ -30,8 +43,23 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        if (inRocket) return;
         isGrounded = GroundCheck();
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+    }
+    void FixedUpdate()
+    {
+        if (!inRocket) return;
+        if (RocketDir.Equals(new(0f, 1f)))
+        {
+            float steerInput = horizontal;
+            rb.linearVelocity = new(steerInput * rocketSteerSpeed, RocketDir.y * rocketSpeed);
+        }
+        else if (RocketDir.Equals(new(-1f, 0f)) || RocketDir.Equals(new(1f, 0f)))
+        {
+            float steerInput = vertical;
+            rb.linearVelocity = new(RocketDir.x * rocketSpeed, steerInput * rocketSteerSpeed);
+        }
     }
     bool GroundCheck()
     {
@@ -52,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 inputVector = context.ReadValue<Vector2>().normalized;
         horizontal = inputVector.x;
+        vertical = inputVector.y;
+        
         if (Mathf.Abs(horizontal) < 0.05f)
         {
             horizontal = 0;
@@ -61,6 +91,24 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Moving", true);
         }
+
+        if (Mathf.Abs(vertical) < 0.05f)
+        {
+            vertical = 0;
+        }
+
+        if (RocketDir.Equals(new(-1f, 0f)) || RocketDir.Equals(new(1f, 0f)))
+        {
+            horizontal = 0;
+        }
+        else if (RocketDir.Equals(new(0f, 1f)))
+        {
+            vertical = 0;
+        }
+        FlipLogic();
+    }
+    private void FlipLogic()
+    {
         if (horizontal < 0)
         {
             spriteRenderer.flipX = true;
@@ -82,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnJump(InputAction.CallbackContext context)
     {
+        if (inRocket) return;
         if (context.performed && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -95,5 +144,33 @@ public class PlayerMovement : MonoBehaviour
     public bool IsFacingLeft()
     {
         return facingLeft;
+    }
+    public void EnterRocketState(int code)
+    {
+        if (inRocket) return;
+        inRocket = true;
+        if (code == 0) Rocket = jumpRocket;
+        else if (code == 1) Rocket = dashRocket;
+        Rocket.SetActive(true);
+        rb.gravityScale = 0;
+        if (code == 0)
+        {
+            RocketDir = new(0f, 1f);
+        }
+        else if (code == 1)
+        {
+            if (!facingLeft) RocketDir = new(-1f, 0f);
+            else RocketDir = new(1f, 0f);
+        }
+    }
+    public void ExitRocketState()
+    {
+        if (!inRocket) return;
+        Rocket.SetActive(false);
+        canUseAbility = true;
+        inRocket = false;
+        rb.gravityScale = normalGravityScale;
+        RocketDir = Vector2.zero;
+        Rocket = null;
     }
 }

@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public GameObject dashRocket;
     [SerializeField] private float rocketSpeed = 10f;
     [SerializeField] private float rocketSteerSpeed = 5f;
-    [SerializeField] private float miniUpForce = 2f;
+    [SerializeField] private float miniUpLift = 0.1f;
     private Vector2 RocketDir = Vector2.zero;
     private GameObject Rocket = null;
     private Rigidbody2D rb;
@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
         if (code == 0) Rocket = jumpRocket;
         else if (code == 1) {
             Rocket = dashRocket;
-            rb.AddForce(Vector2.up * miniUpForce, ForceMode2D.Impulse);
+            rb.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y + miniUpLift);
         }
         Rocket.SetActive(true);
         rb.gravityScale = 0;

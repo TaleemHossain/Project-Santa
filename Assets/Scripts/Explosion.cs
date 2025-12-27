@@ -2,14 +2,22 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] int damage = 100;
-    public void Explode()
+    [SerializeField] float damage = 100f;
+    [SerializeField] int ExplosionType = 0; // 0 - does not effect player, 1 - effects player
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        HealthBar healthBar = transform.GetComponentInParent<HealthBar>();
-        if (healthBar != null)
+        if(ExplosionType == 0 && collision.gameObject.CompareTag("Player"))
         {
-            healthBar.TakeDamage(damage);
+            return;
         }
+        HealthBar HealthBar = collision.gameObject.GetComponent<HealthBar>();
+        if (HealthBar != null)
+        {
+            HealthBar.TakeDamage(damage);
+        }
+    }
+    public void DestroyExplosion()
+    {
         Destroy(transform.gameObject);
     }
 }

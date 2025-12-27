@@ -15,8 +15,7 @@ public class Rocket : MonoBehaviour
     {
         if(collision.CompareTag("Ground") || collision.CompareTag("Enemy") || collision.CompareTag("Breakable"))
         {
-            GameObject explosion = Instantiate(explosionPrefab, CollisionPoint.transform.position, Quaternion.Euler(0f, 0f, 0f));
-            explosion.transform.parent = collision.transform;
+            Instantiate(explosionPrefab, CollisionPoint.transform.position, Quaternion.Euler(0f, 0f, 0f));
             playerMovement.ExitRocketState();
         }
     }

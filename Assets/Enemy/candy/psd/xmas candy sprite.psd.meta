@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: 24c55cf84ad67334f92d5e2ad6f16a0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6508667665050735573
+    second: xmas candy sprite_0
+  - first:
+      213: -1528784711125846629
+    second: xmas candy sprite_1
+  - first:
+      213: 7892011948909257878
+    second: xmas candy sprite_2
+  - first:
+      213: 4710733142829842271
+    second: xmas candy sprite_3
+  - first:
+      213: -8860672497937166552
+    second: xmas candy sprite_4
+  - first:
+      213: -322462921877075646
+    second: xmas candy sprite_5
+  - first:
+      213: 963665895823636111
+    second: xmas candy sprite_6
+  - first:
+      213: -8238269732834578571
+    second: xmas candy sprite_7
+  - first:
+      213: -3459373497453773182
+    second: xmas candy sprite_8
+  - first:
+      213: 6869471559667102543
+    second: xmas candy sprite_9
+  - first:
+      213: -2896256302980881392
+    second: xmas candy sprite_10
+  - first:
+      213: 7794261019445473974
+    second: xmas candy sprite_11
+  - first:
+      213: -2461941674789645086
+    second: xmas candy sprite_12
+  - first:
+      213: -6084061122548903428
+    second: xmas candy sprite_13
+  - first:
+      213: -76088984900037043
+    second: xmas candy sprite_14
+  - first:
+      213: 8200741072274527728
+    second: xmas candy sprite_15
+  - first:
+      213: -5481819014809259516
+    second: xmas candy sprite_16
+  - first:
+      213: -6616418858711353326
+    second: xmas candy sprite_17
+  - first:
+      213: 6473964198122782501
+    second: xmas candy sprite_18
+  - first:
+      213: -4185863863383637081
+    second: xmas candy sprite_19
+  - first:
+      213: 6729410344335645684
+    second: xmas candy sprite_20
+  - first:
+      213: -8588176018985033502
+    second: xmas candy sprite_21
+  - first:
+      213: -1461855917090748922
+    second: xmas candy sprite_22
+  - first:
+      213: 4975711318213842512
+    second: xmas candy sprite_23
+  - first:
+      213: 8334110215816551672
+    second: xmas candy sprite_24
+  - first:
+      213: -8447424648335095508
+    second: xmas candy sprite_25
+  - first:
+      213: -1134858963627012184
+    second: xmas candy sprite_26
+  - first:
+      213: 3199898754405804820
+    second: xmas candy sprite_27
+  - first:
+      213: -2601286619569456022
+    second: xmas candy sprite_28
+  - first:
+      213: -8782255011122842479
+    second: xmas candy sprite_29
+  - first:
+      213: -8125446950475760776
+    second: xmas candy sprite_30
+  - first:
+      213: 7631870163906336210
+    second: xmas candy sprite_31
+  - first:
+      213: -2087947424460163821
+    second: xmas candy sprite_32
+  - first:
+      213: 5208628090855318091
+    second: xmas candy sprite_33
+  - first:
+      213: -343917079639521111
+    second: xmas candy sprite_34
+  - first:
+      213: -3013305037602394460
+    second: xmas candy sprite_35
+  - first:
+      213: 6678860231808130366
+    second: xmas candy sprite_36
+  - first:
+      213: 4166535562249685815
+    second: xmas candy sprite_37
+  - first:
+      213: -2450643993181099123
+    second: xmas candy sprite_38
+  - first:
+      213: -2139191173038637283
+    second: xmas candy sprite_39
+  - first:
+      213: 4148981489914693722
+    second: xmas candy sprite_40
+  - first:
+      213: 5798367022689134870
+    second: xmas candy sprite_41
+  - first:
+      213: 6558064520174896136
+    second: xmas candy sprite_42
+  - first:
+      213: 8384599384907018697
+    second: xmas candy sprite_43
+  - first:
+      213: -4120648188121461788
+    second: xmas candy sprite_44
+  - first:
+      213: -4676278288105514025
+    second: xmas candy sprite_45
+  - first:
+      213: -103582052448655346
+    second: xmas candy sprite_46
+  - first:
+      213: -5141183908779193671
+    second: xmas candy sprite_47
+  - first:
+      213: 6734219806763835598
+    second: xmas candy sprite_48
+  - first:
+      213: 404631843158996184
+    second: xmas candy sprite_49
+  - first:
+      213: 8507648598221004421
+    second: xmas candy sprite_50
+  - first:
+      213: -4759086855657703826
+    second: xmas candy sprite_51
+  - first:
+      213: 7927779492371549849
+    second: xmas candy sprite_52
+  - first:
+      213: -96878789724447011
+    second: xmas candy sprite_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xmas candy sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2375
+        width: 229
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c64973e319ca5a0800000000000000
+      internalID: -6508667665050735573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2375
+        width: 253
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95bb43b76aa8cae0800000000000000
+      internalID: -1528784711125846629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_2
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2375
+        width: 273
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694efd9cd0f068d60800000000000000
+      internalID: 7892011948909257878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 2375
+        width: 290
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f380ab5d2ef5140800000000000000
+      internalID: 4710733142829842271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 2375
+        width: 303
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fc1691f41980580800000000000000
+      internalID: -8860672497937166552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_5
+      rect:
+        serializedVersion: 2
+        x: 2072
+        y: 2366
+        width: 259
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24948485ea1668bf0800000000000000
+      internalID: -322462921877075646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_6
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 2345
+        width: 295
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86f9bac601af5d00800000000000000
+      internalID: 963665895823636111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_7
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 2339
+        width: 403
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fea828359cbad80800000000000000
+      internalID: -8238269732834578571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_8
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 2328
+        width: 501
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28efdd2f126ddffc0800000000000000
+      internalID: -3459373497453773182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_9
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 2606
+        width: 556
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f433b9cccf3455f50800000000000000
+      internalID: 6869471559667102543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1790
+        width: 231
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014a65acc3e6ec7d0800000000000000
+      internalID: -2896256302980881392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_11
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1790
+        width: 231
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2b8b6f917ca2c60800000000000000
+      internalID: 7794261019445473974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_12
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1793
+        width: 230
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4de68371d65ddd0800000000000000
+      internalID: -2461941674789645086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3910
+        y: 2325
+        width: 585
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf155bec4a2119ba0800000000000000
+      internalID: -6084061122548903428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_14
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1790
+        width: 230
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4696bba87da1fef0800000000000000
+      internalID: -76088984900037043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_15
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1790
+        width: 231
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f511eb4e82eec170800000000000000
+      internalID: 8200741072274527728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_16
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 1787
+        width: 231
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402ff4366aaace3b0800000000000000
+      internalID: -5481819014809259516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_17
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1787
+        width: 231
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21870517a12cd24a0800000000000000
+      internalID: -6616418858711353326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_18
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 1782
+        width: 231
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f74bd332428d950800000000000000
+      internalID: 6473964198122782501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_19
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 1773
+        width: 231
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3cfd07ef2d8e5c0800000000000000
+      internalID: -4185863863383637081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_20
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 1773
+        width: 231
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb17f1ed0ba36d50800000000000000
+      internalID: 6729410344335645684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_21
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1885
+        width: 226
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e06edfa96ba0d880800000000000000
+      internalID: -8588176018985033502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_22
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 1881
+        width: 442
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606c005e9c176bbe0800000000000000
+      internalID: -1461855917090748922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1200
+        width: 231
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056d60bd4174d0540800000000000000
+      internalID: 4975711318213842512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_24
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1209
+        width: 256
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc13b4d515b8a370800000000000000
+      internalID: 8334110215816551672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_25
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1212
+        width: 287
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c298b19e908b4ca80800000000000000
+      internalID: -8447424648335095508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_26
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1216
+        width: 313
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af08da09cb2040f0800000000000000
+      internalID: -1134858963627012184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_27
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1210
+        width: 287
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ba29d96f2586c20800000000000000
+      internalID: 3199898754405804820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_28
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1205
+        width: 256
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cf5990a9f56ebd0800000000000000
+      internalID: -2601286619569456022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_29
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 1192
+        width: 231
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194f02709992f1680800000000000000
+      internalID: -8782255011122842479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_30
+      rect:
+        serializedVersion: 2
+        x: 2950
+        y: 1299
+        width: 152
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b7c9b8c0d9c3f80800000000000000
+      internalID: -8125446950475760776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_31
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 1299
+        width: 173
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d51a8b8a79d9e960800000000000000
+      internalID: 7631870163906336210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_32
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 1284
+        width: 388
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3153c5f31ee1603e0800000000000000
+      internalID: -2087947424460163821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_33
+      rect:
+        serializedVersion: 2
+        x: 3715
+        y: 652
+        width: 347
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b426d82f6a3c84840800000000000000
+      internalID: 5208628090855318091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_34
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 610
+        width: 230
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a885ebfc392a3bf0800000000000000
+      internalID: -343917079639521111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_35
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 610
+        width: 230
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae60d198079e26d0800000000000000
+      internalID: -3013305037602394460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_36
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 610
+        width: 232
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d1865aef310bc50800000000000000
+      internalID: 6678860231808130366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_37
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 610
+        width: 230
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bcce3c40282d930800000000000000
+      internalID: 4166535562249685815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_38
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 610
+        width: 226
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bee73b5409dfdd0800000000000000
+      internalID: -2450643993181099123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_39
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 610
+        width: 232
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f716846f01052e0800000000000000
+      internalID: -2139191173038637283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_40
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 610
+        width: 232
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58490ecea4249930800000000000000
+      internalID: 4148981489914693722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_41
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 673
+        width: 98
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619a9b80610f77050800000000000000
+      internalID: 5798367022689134870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_42
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 673
+        width: 169
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8040e1b5fece20b50800000000000000
+      internalID: 6558064520174896136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_43
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 673
+        width: 254
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1775197b41c5470800000000000000
+      internalID: 8384599384907018697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_44
+      rect:
+        serializedVersion: 2
+        x: 3927
+        y: 609
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebc9a61e4480d6c0800000000000000
+      internalID: -4120648188121461788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_45
+      rect:
+        serializedVersion: 2
+        x: 3908
+        y: 586
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db59964ca58a1fb0800000000000000
+      internalID: -4676278288105514025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_46
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 25
+        width: 238
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0821be0ca0009ef0800000000000000
+      internalID: -103582052448655346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_47
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 8
+        width: 259
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba03406978d6a8b0800000000000000
+      internalID: -5141183908779193671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_48
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 13
+        width: 281
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0ee8d1c31c47d50800000000000000
+      internalID: 6734219806763835598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_49
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 13
+        width: 259
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4bd4c748a8d9500800000000000000
+      internalID: 404631843158996184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_50
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 0
+        width: 238
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e10da135d311670800000000000000
+      internalID: 8507648598221004421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_51
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 146
+        width: 307
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66ba4138b354fdb0800000000000000
+      internalID: -4759086855657703826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_52
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 130
+        width: 185
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ece64f171250e60800000000000000
+      internalID: 7927779492371549849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xmas candy sprite_53
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 142
+        width: 1255
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde54380141d7aef0800000000000000
+      internalID: -96878789724447011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      xmas candy sprite_0: -6508667665050735573
+      xmas candy sprite_1: -1528784711125846629
+      xmas candy sprite_10: -2896256302980881392
+      xmas candy sprite_11: 7794261019445473974
+      xmas candy sprite_12: -2461941674789645086
+      xmas candy sprite_13: -6084061122548903428
+      xmas candy sprite_14: -76088984900037043
+      xmas candy sprite_15: 8200741072274527728
+      xmas candy sprite_16: -5481819014809259516
+      xmas candy sprite_17: -6616418858711353326
+      xmas candy sprite_18: 6473964198122782501
+      xmas candy sprite_19: -4185863863383637081
+      xmas candy sprite_2: 7892011948909257878
+      xmas candy sprite_20: 6729410344335645684
+      xmas candy sprite_21: -8588176018985033502
+      xmas candy sprite_22: -1461855917090748922
+      xmas candy sprite_23: 4975711318213842512
+      xmas candy sprite_24: 8334110215816551672
+      xmas candy sprite_25: -8447424648335095508
+      xmas candy sprite_26: -1134858963627012184
+      xmas candy sprite_27: 3199898754405804820
+      xmas candy sprite_28: -2601286619569456022
+      xmas candy sprite_29: -8782255011122842479
+      xmas candy sprite_3: 4710733142829842271
+      xmas candy sprite_30: -8125446950475760776
+      xmas candy sprite_31: 7631870163906336210
+      xmas candy sprite_32: -2087947424460163821
+      xmas candy sprite_33: 5208628090855318091
+      xmas candy sprite_34: -343917079639521111
+      xmas candy sprite_35: -3013305037602394460
+      xmas candy sprite_36: 6678860231808130366
+      xmas candy sprite_37: 4166535562249685815
+      xmas candy sprite_38: -2450643993181099123
+      xmas candy sprite_39: -2139191173038637283
+      xmas candy sprite_4: -8860672497937166552
+      xmas candy sprite_40: 4148981489914693722
+      xmas candy sprite_41: 5798367022689134870
+      xmas candy sprite_42: 6558064520174896136
+      xmas candy sprite_43: 8384599384907018697
+      xmas candy sprite_44: -4120648188121461788
+      xmas candy sprite_45: -4676278288105514025
+      xmas candy sprite_46: -103582052448655346
+      xmas candy sprite_47: -5141183908779193671
+      xmas candy sprite_48: 6734219806763835598
+      xmas candy sprite_49: 404631843158996184
+      xmas candy sprite_5: -322462921877075646
+      xmas candy sprite_50: 8507648598221004421
+      xmas candy sprite_51: -4759086855657703826
+      xmas candy sprite_52: 7927779492371549849
+      xmas candy sprite_53: -96878789724447011
+      xmas candy sprite_6: 963665895823636111
+      xmas candy sprite_7: -8238269732834578571
+      xmas candy sprite_8: -3459373497453773182
+      xmas candy sprite_9: 6869471559667102543
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

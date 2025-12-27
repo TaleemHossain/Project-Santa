@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 groundCheckOffset = Vector2.zero;
     [Header("Components")]
     [SerializeField] private GameObject holder;
+    [SerializeField] private GameObject Shield;
     [Header("Rockets")]
     [SerializeField] public GameObject jumpRocket;
     [SerializeField] public GameObject dashRocket;
@@ -121,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
             groundCheckOffset.x = Mathf.Abs(groundCheckOffset.x);
             holder.transform.localPosition = new(-Mathf.Abs(holder.transform.localPosition.x), holder.transform.localPosition.y, holder.transform.localPosition.z);
             holder.transform.localScale = new(-math.abs(holder.transform.localScale.x), holder.transform.localScale.y, holder.transform.localScale.z);
+            Shield.GetComponent<Shield>().offset = new Vector3(-Mathf.Abs(Shield.GetComponent<Shield>().offset.x), Shield.GetComponent<Shield>().offset.y, Shield.GetComponent<Shield>().offset.z);
             facingLeft = false;
         }
         else if (horizontal > 0)
@@ -130,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
             groundCheckOffset.x = -Mathf.Abs(groundCheckOffset.x);
             holder.transform.localPosition = new(Mathf.Abs(holder.transform.localPosition.x), holder.transform.localPosition.y, holder.transform.localPosition.z);
             holder.transform.localScale = new(math.abs(holder.transform.localScale.x), holder.transform.localScale.y, holder.transform.localScale.z);
+            Shield.GetComponent<Shield>().offset = new Vector3(Mathf.Abs(Shield.GetComponent<Shield>().offset.x), Shield.GetComponent<Shield>().offset.y, Shield.GetComponent<Shield>().offset.z);
             facingLeft = true;
         }
     }

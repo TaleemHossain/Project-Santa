@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Splines.ExtrusionShapes;
 
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private GameObject Shield;
     private PlayerMovement playerMovement;
     bool canAttack = true;
     void Start()
@@ -30,5 +32,13 @@ public class PlayerAttack : MonoBehaviour
     public void DisableAttack()
     {
         canAttack = false;
+    }
+    public void EnableShield()
+    {
+        Shield.GetComponent<CircleCollider2D>().enabled = true;
+    }
+    public void DisableShield()
+    {
+        Shield.GetComponent<CircleCollider2D>().enabled = false;
     }
 }

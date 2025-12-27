@@ -8,6 +8,9 @@ TagManager:
   - Ground
   - Enemy
   - Breakable
+  - Racket
+  - JingleBall
+  - Shield
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - Ground
   - Enemy
   - Player
-  - 
-  - 
-  - 
+  - Racket
+  - JingleBall
+  - Shield
   - 
   - 
   - 

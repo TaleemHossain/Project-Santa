@@ -71,6 +71,10 @@ public class CandyMan : MonoBehaviour
         Transform targetPoint = patrolPoints[nextPatrolIndex];
         Vector2 direction = targetPoint.position - transform.position;
         direction = new(Mathf.Clamp(direction.x, -1f, 1f), 0f);
+        if(Mathf.Abs(direction.x) > 0.1f)
+            direction = direction.normalized;
+        else 
+            direction = Vector2.zero;
         moveAmount = direction.x;
         Animate();
         rb.linearVelocity = direction * patrolSpeed;
@@ -130,16 +134,19 @@ public class CandyMan : MonoBehaviour
                 {
                     if (i == nextPatrolIndex)
                     {
-                        Gizmos.color = Color.red;
+                        Gizmos.color = Color.green;
                     }
                     else
                     {
-                        Gizmos.color = Color.green;
+                        Gizmos.color = Color.blue;
                     }
                     Gizmos.DrawSphere(patrolPoints[i].position, 0.1f);
                     if (i > 0 && patrolPoints[i - 1] != null)
                     {
-                        Gizmos.color = Color.red;
+                        if(state == 1)
+                            Gizmos.color = Color.white;
+                        else
+                            Gizmos.color = Color.green;
                         Gizmos.DrawLine(patrolPoints[i - 1].position, patrolPoints[i].position);
                     }
                 }

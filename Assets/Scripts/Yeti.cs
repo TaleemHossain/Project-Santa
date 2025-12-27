@@ -81,6 +81,10 @@ public class Yeti : MonoBehaviour
         Transform targetPoint = patrolPoints[nextPatrolIndex];
         Vector2 direction = targetPoint.position - transform.position;
         direction = new(Mathf.Clamp(direction.x, -1f, 1f), 0f);
+        if(Mathf.Abs(direction.x) > 0.1f)
+            direction = direction.normalized;
+        else 
+            direction = Vector2.zero;
         moveAmount = direction.x;
         Animate();
         rb.linearVelocity = direction * patrolSpeed;
@@ -107,16 +111,16 @@ public class Yeti : MonoBehaviour
         Vector2 direction = player.transform.position - transform.position;
         direction = new(Mathf.Clamp(direction.x, -1f, 1f), 0);
         moveAmount = direction.x;
-        Debug.Log("directio.x: " + direction.x);
+        // Debug.Log("direction.x: " + direction.x);
         Animate();
         if (!isGrounded || isAttacking || Mathf.Abs(direction.x) < maxApproachDistance)
         {
-            Debug.Log("Yeti Stopped");
+            // Debug.Log("Yeti Stopped");
             rb.linearVelocity = Vector2.zero;
         }
         else
         {
-            Debug.Log("Yeti Chasing");
+            // Debug.Log("Yeti Chasing");
             rb.linearVelocity = direction * chaseSpeed;
         }
         RaycastHit2D hitInfo = Physics2D.BoxCast(AttackPoint.position, new Vector2(BoxCastSize, BoxCastSize), 0f, direction, attackRange, PlayerLayer);
@@ -212,16 +216,19 @@ public class Yeti : MonoBehaviour
                 {
                     if (i == nextPatrolIndex)
                     {
-                        Gizmos.color = Color.blue;
+                        Gizmos.color = Color.green;
                     }
                     else
                     {
-                        Gizmos.color = Color.green;
+                        Gizmos.color = Color.blue;
                     }
                     Gizmos.DrawSphere(patrolPoints[i].position, 0.1f);
                     if (i > 0 && patrolPoints[i - 1] != null)
                     {
-                        Gizmos.color = Color.white;
+                        if(state == 1)
+                            Gizmos.color = Color.white;
+                        else
+                            Gizmos.color = Color.green;
                         Gizmos.DrawLine(patrolPoints[i - 1].position, patrolPoints[i].position);
                     }
                 }

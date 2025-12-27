@@ -15,4 +15,12 @@ public class RacketHolder : MonoBehaviour
     {
         playerAttack.DisableAttack();
     }
+    public void EnableShield()
+    {
+        playerAttack.EnableShield();
+    }
+    public void DisableShield()
+    {
+        playerAttack.DisableShield();
+    }
 }

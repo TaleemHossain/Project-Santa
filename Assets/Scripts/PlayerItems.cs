@@ -3,36 +3,30 @@ using UnityEngine.InputSystem;
 
 public class PlayerItems : MonoBehaviour
 {
-    [SerializeField] int jumpGiftCount = 0;
-    [SerializeField] int dashGiftCount = 0;
-    [SerializeField] BoxCollider2D collider2d;
+    [SerializeField] int dashGiftCount = 0; // code - 0
+    [SerializeField] int jumpGiftCount = 0; // code - 1
     PlayerMovement playerMovement;
     public void Start()
     {
         playerMovement = transform.GetComponent<PlayerMovement>();
     }
-    public void AddJumpGift()
-    {
-        jumpGiftCount++;
-    }
-    public void AddDashGift()
+    private void AddDashGift()
     {
         dashGiftCount++;
     }
-    void OnTriggerEnter2D(Collider2D other)
+    private void AddJumpGift()
     {
-        if (other.GetComponent<IItems>() != null)
+        jumpGiftCount++;
+    }
+    public void ItemInteraction(int code)
+    {
+        if (code == 0)
         {
-            IItems item = other.GetComponent<IItems>();
-            if (other.GetComponent<JumpGift>() != null)
-            {
-                AddJumpGift();
-            }
-            else if (other.GetComponent<DashGift>() != null)
-            {
-                AddDashGift();
-            }
-            item.Collect();
+            AddDashGift();
+        }
+        else if (code == 1)
+        {
+            AddJumpGift();
         }
     }
     public void OnJumpGift(InputAction.CallbackContext context)

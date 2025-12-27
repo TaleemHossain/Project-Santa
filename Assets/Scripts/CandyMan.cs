@@ -69,17 +69,13 @@ public class CandyMan : MonoBehaviour
     void Patrol()
     {
         Transform targetPoint = patrolPoints[nextPatrolIndex];
-        Vector2 direction = (targetPoint.position - transform.position).normalized;
-        direction = new(direction.x, 0);
-        if (Mathf.Abs(direction.x) < 0.05f)
-        {
-            direction.x = 0f;
-        }
+        Vector2 direction = targetPoint.position - transform.position;
+        direction = new(Mathf.Clamp(direction.x, -1f, 1f), 0f);
         moveAmount = direction.x;
         Animate();
         rb.linearVelocity = direction * patrolSpeed;
 
-        if (Mathf.Abs(direction.x) < 0.05f)
+        if (Mathf.Abs(direction.x) < 0.1f)
         {
             if (!WaitingOnPatrol)
                 StartCoroutine(WaitAtPatrolPoint());

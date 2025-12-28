@@ -6,11 +6,14 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject Shield;
+    [SerializeField] private bool hasRacket;
     private PlayerMovement playerMovement;
-    bool canAttack = true;
+    bool canAttack;
     void Start()
     {
-        playerMovement = transform.GetComponent<PlayerMovement>();  
+        playerMovement = transform.GetComponent<PlayerMovement>();
+        if(hasRacket) canAttack = true;
+        else canAttack = false;
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
@@ -40,5 +43,10 @@ public class PlayerAttack : MonoBehaviour
     public void DisableShield()
     {
         Shield.GetComponent<PolygonCollider2D>().enabled = false;
+    }
+    public void GetRacket()
+    {
+        hasRacket = true;
+        canAttack = true;
     }
 }

@@ -122,7 +122,8 @@ public class PlayerMovement : MonoBehaviour
             groundCheckOffset.x = Mathf.Abs(groundCheckOffset.x);
             holder.transform.localPosition = new(-Mathf.Abs(holder.transform.localPosition.x), holder.transform.localPosition.y, holder.transform.localPosition.z);
             holder.transform.localScale = new(-math.abs(holder.transform.localScale.x), holder.transform.localScale.y, holder.transform.localScale.z);
-            Shield.GetComponent<Shield>().offset = new Vector3(-Mathf.Abs(Shield.GetComponent<Shield>().offset.x), Shield.GetComponent<Shield>().offset.y, Shield.GetComponent<Shield>().offset.z);
+            Shield.GetComponent<Shield>().offset = new Vector3(Shield.GetComponent<Shield>().offset1.x, Shield.GetComponent<Shield>().offset1.y, Shield.GetComponent<Shield>().offset1.z);
+            Shield.transform.localScale = new(-math.abs(Shield.transform.localScale.x), Shield.transform.localScale.y, Shield.transform.localScale.z);
             facingLeft = false;
         }
         else if (horizontal > 0)
@@ -132,7 +133,8 @@ public class PlayerMovement : MonoBehaviour
             groundCheckOffset.x = -Mathf.Abs(groundCheckOffset.x);
             holder.transform.localPosition = new(Mathf.Abs(holder.transform.localPosition.x), holder.transform.localPosition.y, holder.transform.localPosition.z);
             holder.transform.localScale = new(math.abs(holder.transform.localScale.x), holder.transform.localScale.y, holder.transform.localScale.z);
-            Shield.GetComponent<Shield>().offset = new Vector3(Mathf.Abs(Shield.GetComponent<Shield>().offset.x), Shield.GetComponent<Shield>().offset.y, Shield.GetComponent<Shield>().offset.z);
+            Shield.GetComponent<Shield>().offset = new Vector3(Shield.GetComponent<Shield>().offset2.x, Shield.GetComponent<Shield>().offset2.y, Shield.GetComponent<Shield>().offset2.z);
+            Shield.transform.localScale = new(math.abs(Shield.transform.localScale.x), Shield.transform.localScale.y, Shield.transform.localScale.z);
             facingLeft = true;
         }
     }
@@ -158,7 +160,8 @@ public class PlayerMovement : MonoBehaviour
         if (inRocket) return;
         inRocket = true;
         if (code == 0) Rocket = jumpRocket;
-        else if (code == 1) {
+        else if (code == 1)
+        {
             Rocket = dashRocket;
             rb.transform.position = new Vector2(rb.transform.position.x, rb.transform.position.y + miniUpLift);
         }

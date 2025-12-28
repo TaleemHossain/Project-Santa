@@ -35,10 +35,10 @@ public class PlayerAttack : MonoBehaviour
     }
     public void EnableShield()
     {
-        Shield.GetComponent<CircleCollider2D>().enabled = true;
+        Shield.GetComponent<PolygonCollider2D>().enabled = true;
     }
     public void DisableShield()
     {
-        Shield.GetComponent<CircleCollider2D>().enabled = false;
+        Shield.GetComponent<PolygonCollider2D>().enabled = false;
     }
 }

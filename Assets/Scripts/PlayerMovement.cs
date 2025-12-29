@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     float vertical;
     bool isGrounded = false;
     bool facingLeft = true;
+    bool icePlatforms = false;
     public bool inRocket = false;
     public bool canUseAbility = true;
     void Start()
@@ -49,6 +50,16 @@ public class PlayerMovement : MonoBehaviour
         if (inRocket) return;
         isGrounded = GroundCheck();
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+    }
+    void LateUpdate()
+    {
+        if(!icePlatforms) return;
+        rb.linearVelocity = new(2f * rb.linearVelocity.x, rb.linearVelocity.y);
+        if(rb.linearVelocity == Vector2.zero)
+        {
+            if(facingLeft) rb.linearVelocity = new(0.5f * speed, 0f);
+            else rb.linearVelocity = new(-0.5f * speed, 0f);
+        }
     }
     void FixedUpdate()
     {
@@ -191,5 +202,13 @@ public class PlayerMovement : MonoBehaviour
     public void Respawn()
     {
         transform.position = RespawnPoint.transform.position;
+    }
+    public void EnterIcePlatform()
+    {
+        icePlatforms = true;
+    }
+    public void ExitIcePlatform()
+    {
+        icePlatforms = false;
     }
 }

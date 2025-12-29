@@ -1,46 +1,24 @@
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public class BreakingPlatform: MonoBehaviour
 {
-    [SerializeField] private float breakDelay = 2f;
-
-    private Tilemap tilemap;
-
-    void Awake()
+    [SerializeField] public float breakDelay = 5f;
+    [SerializeField] public float reappearDelay = 5f;
+    int index;
+    private BPmanager manager;
+    void Start()
     {
-        tilemap = GetComponent<Tilemap>();
+        manager = transform.gameObject.GetComponentInParent<BPmanager>();
     }
-
+    public void SetIndex(int i)
+    {
+        index = i;
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Player"))
-            return;
-
-        // Check each contact point
-        foreach (ContactPoint2D contact in collision.contacts)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            // Only break tiles the player lands ON (from above)
-            if (contact.normal.y < 0.5f)
-                continue;
-
-            Vector3 worldPoint = contact.point;
-            Vector3Int cellPos = tilemap.WorldToCell(worldPoint);
-
-            if (tilemap.HasTile(cellPos))
-            {
-                StartCoroutine(BreakTile(cellPos));
-            }
-        }
-    }
-
-    System.Collections.IEnumerator BreakTile(Vector3Int cellPos)
-    {
-        yield return new WaitForSeconds(breakDelay);
-
-        if (tilemap.HasTile(cellPos))
-        {
-            tilemap.SetTile(cellPos, null);
+            manager.SetTime(index);
         }
     }
 }

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Components")]
     [SerializeField] private GameObject holder;
     [SerializeField] private GameObject Shield;
+    [SerializeField] private GameObject RespawnPoint;
     [Header("Rockets")]
     [SerializeField] public GameObject jumpRocket;
     [SerializeField] public GameObject dashRocket;
@@ -186,5 +187,9 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = normalGravityScale;
         RocketDir = Vector2.zero;
         Rocket = null;
+    }
+    public void Respawn()
+    {
+        transform.position = RespawnPoint.transform.position;
     }
 }

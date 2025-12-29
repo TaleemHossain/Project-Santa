@@ -67,7 +67,6 @@ public class SnowMan : MonoBehaviour
         {
             Alert();
         }
-        Debug.Log("Linear Velocity : " + rb.linearVelocity);
     }
     bool GroundCheck()
     {

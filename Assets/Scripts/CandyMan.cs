@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CandyMan : MonoBehaviour
@@ -197,6 +198,11 @@ public class CandyMan : MonoBehaviour
     {
         Debug.Log("CandyMan Exploded");
         Instantiate(explosionPrefab, explosionPosition.transform.position, Quaternion.Euler(0f, 0f, 0f));
+        Spawner spawner = transform.gameObject.GetComponent<Spawner>();
+        if(spawner != null)
+        {
+            spawner.Spawn();
+        }
         animator.SetTrigger("Death");
         Exploded = true;
     }

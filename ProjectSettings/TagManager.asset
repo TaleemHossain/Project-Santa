@@ -12,6 +12,7 @@ TagManager:
   - JingleBall
   - Shield
   - Wall
+  - Spikes
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - JingleBall
   - Shield
   - Breakable
-  - 
+  - Spikes
   - 
   - 
   - 

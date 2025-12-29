@@ -16,6 +16,15 @@ public class HealthBar : MonoBehaviour
         {
             Debug.Log("Death from Damage");
             isDead = true;
+            if(gameObject.CompareTag("Player"))
+            {
+                // Scene Reload
+            }
+            if(gameObject.CompareTag("Enemy"))
+            {
+                if(gameObject.GetComponent<Spawner>() != null)
+                    gameObject.GetComponent<Spawner>().Spawn();
+            }
             if(animator != null)
             {
                 animator.SetTrigger("Death");

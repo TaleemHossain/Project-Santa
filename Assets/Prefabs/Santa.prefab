@@ -964,10 +964,11 @@ MonoBehaviour:
   groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 12352
   groundCheckOffset: {x: -0.065, y: -0.34}
   holder: {fileID: 993387667144587192}
   Shield: {fileID: 0}
+  RespawnPoint: {fileID: 0}
   jumpRocket: {fileID: 3615297687143425207}
   dashRocket: {fileID: 7947855861188095525}
   rocketSpeed: 10
@@ -989,6 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8925051188197985264}
   Shield: {fileID: 0}
+  hasRacket: 0
 --- !u!114 &2969944767129469570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,6 +1005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashGiftCount: 0
   jumpGiftCount: 0
+  healAmount: 100
 --- !u!114 &7008603371569774963
 MonoBehaviour:
   m_ObjectHideFlags: 0

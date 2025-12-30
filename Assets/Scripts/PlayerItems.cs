@@ -5,6 +5,7 @@ public class PlayerItems : MonoBehaviour
 {
     [SerializeField] int dashGiftCount = 0; // code - 0
     [SerializeField] int jumpGiftCount = 0; // code - 1
+    [SerializeField] float healAmount = 100f;
     PlayerMovement playerMovement;
     public void Start()
     {
@@ -27,6 +28,10 @@ public class PlayerItems : MonoBehaviour
         else if (code == 1)
         {
             AddJumpGift();
+        }
+        else if (code == 2)
+        {
+            transform.gameObject.GetComponent<HealthBar>().Heal(healAmount);
         }
     }
     public void OnJumpGift(InputAction.CallbackContext context)

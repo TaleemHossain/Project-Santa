@@ -3,16 +3,23 @@ using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] float maxHealth = 1000f;
+    float currentHealth;
     Animator animator;
     bool isDead = false;
     void Start()
     {
+        currentHealth = maxHealth;
         animator = transform.GetComponent<Animator>();
+    }
+    public void Heal(float amount)
+    {
+        currentHealth += amount;
+        if(currentHealth > maxHealth) currentHealth = maxHealth;
     }
     public void TakeDamage(float damage)
     {
-        maxHealth -= damage;
-        if (maxHealth <= 0 && !isDead)
+        currentHealth -= damage;
+        if (currentHealth <= 0 && !isDead)
         {
             Debug.Log("Death from Damage");
             isDead = true;

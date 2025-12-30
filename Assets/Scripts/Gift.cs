@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Gift : MonoBehaviour
 {
-    public int giftType; // 0 - Dash, 1 - Jump
+    public int giftType; // 0 - Dash, 1 - Jump, 2 - Health
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))

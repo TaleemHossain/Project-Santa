@@ -162,7 +162,8 @@ public class SnowMan : MonoBehaviour
         }
         else
         {
-            throwDirection = Vector2.zero;
+            Destroy(jingleBall);
+            return;
         }
         throwDirection = throwDirection.normalized;
         Rigidbody2D jingleBallRb = jingleBall.GetComponent<Rigidbody2D>();

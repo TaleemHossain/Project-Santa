@@ -27,11 +27,8 @@ public class HealthBar : MonoBehaviour
             {
                 // Scene Reload
             }
-            if(gameObject.CompareTag("Enemy"))
-            {
-                if(gameObject.GetComponent<Spawner>() != null)
-                    gameObject.GetComponent<Spawner>().Spawn();
-            }
+            if(gameObject.GetComponent<Spawner>() != null)
+                gameObject.GetComponent<Spawner>().Spawn();
             if(animator != null)
             {
                 animator.SetTrigger("Death");

@@ -10,9 +10,11 @@ public class bossVideoTrigger : MonoBehaviour
     [SerializeField] private GameObject AtnasUI;
     CircleCollider2D collider2d;
     bool isTriggered = false;
+    AudioManager audioManager;
     void Start()
     {
         collider2d = transform.gameObject.GetComponent<CircleCollider2D>();
+        audioManager = FindAnyObjectByType<AudioManager>();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +24,7 @@ public class bossVideoTrigger : MonoBehaviour
             {
                 isTriggered = true;
                 Time.timeScale = 0f;
+                audioManager.bgm.Pause();
                 bossVideo.SetActive(true);
                 bossVP.Play();
                 bossVP.loopPointReached += OnIntroFinished;
@@ -34,6 +37,7 @@ public class bossVideoTrigger : MonoBehaviour
         bossVideo.SetActive(false);
         Time.timeScale = 1f;
         collider2d.enabled = false;
+        audioManager.bgm.UnPause();
         StartCoroutine(WaitforSometime());
     }
     IEnumerator WaitforSometime()

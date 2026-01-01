@@ -34,6 +34,7 @@ public class Yeti : MonoBehaviour
     [Header("Other Settings")]
     private int state = 0; // 0 = Patrolling, 1 = Chasing
     private float moveAmount;
+    AudioManager audioManager;
 
     void Start()
     {
@@ -41,6 +42,7 @@ public class Yeti : MonoBehaviour
         rb = transform.GetComponent<Rigidbody2D>();
         nextPatrolIndex = 0;
         moveAmount = 0f;
+        audioManager = FindAnyObjectByType<AudioManager>();
     }
 
     void Update()
@@ -69,6 +71,7 @@ public class Yeti : MonoBehaviour
 
         if (hitInfo.collider != null)
         {
+            audioManager.PlayAlert();
             state = 1;
         }
         else

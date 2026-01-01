@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &712141
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4568075658112452051, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 140.0035
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.338486
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00004202721
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262935592103551536, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 490e54c975bd8b44f98393d38592d540, type: 3}
 --- !u!1 &2056623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,7 +2294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &348885822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2865,7 +2921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &442254430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23231,7 +23286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &1229558499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24052,7 +24106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &1295541304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24980,7 +25033,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!1001 &1437855740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26163,7 +26215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!1001 &1573166966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28269,7 +28320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &1748768276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29455,7 +29505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &1843877858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29783,7 +29832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &1863480113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31726,7 +31774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221b051f75351cc45a1c064f8306fe21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 3
 --- !u!61 &2134271922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32174,6 +32221,7 @@ MeshRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 712141}
   - {fileID: 1298887366}
   - {fileID: 7806894}
   - {fileID: 2839963691694469537}

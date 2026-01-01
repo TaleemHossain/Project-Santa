@@ -34,9 +34,11 @@ public class CandyMan : MonoBehaviour
     [Header("Other Settings")]
     private int state = 0; // 0 = Patrolling, 1 = Chasing
     private float moveAmount;
+    AudioManager audioManager;
 
     void Start()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         animator = transform.GetComponent<Animator>();
         rb = transform.GetComponent<Rigidbody2D>();
         nextPatrolIndex = 0;
@@ -66,6 +68,7 @@ public class CandyMan : MonoBehaviour
         if (hitInfo.collider != null && hitInfo.collider.gameObject.CompareTag("Player"))
         {
             state = 1;
+            audioManager.PlayAlert();
         }
     }
     void Patrol()
@@ -199,6 +202,7 @@ public class CandyMan : MonoBehaviour
     {
         Debug.Log("CandyMan Exploded");
         Instantiate(explosionPrefab, explosionPosition.transform.position, Quaternion.Euler(0f, 0f, 0f));
+        audioManager.PlayExplosion();
         Spawner spawner = transform.gameObject.GetComponent<Spawner>();
         if(spawner != null)
         {

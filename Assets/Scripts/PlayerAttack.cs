@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Splines.ExtrusionShapes;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -8,9 +7,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject Shield;
     [SerializeField] private bool hasRacket;
     private PlayerMovement playerMovement;
+    AudioManager audioManager;
     bool canAttack;
     void Start()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         playerMovement = transform.GetComponent<PlayerMovement>();
         if(hasRacket) canAttack = true;
         else canAttack = false;
@@ -19,6 +20,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if(!canAttack) return;
         if(playerMovement.inRocket) return;
+        audioManager.PlayRacket();
         if (context.performed && playerMovement.IsGrounded())
         {
             animator.SetTrigger("GroundAttack");

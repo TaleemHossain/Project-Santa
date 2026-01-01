@@ -9,8 +9,10 @@ public class BPmanager : MonoBehaviour
     float[] playerLandTime;
     float[] deactivatedTime;
     int n;
+    AudioManager audioManager;
     void Start()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         n = transform.childCount;
         platforms = new GameObject[n];
         active = new bool[n];
@@ -46,6 +48,7 @@ public class BPmanager : MonoBehaviour
                 deactivatedTime[i] = Time.time;
                 active[i] = false;
                 platforms[i].SetActive(false);
+                audioManager.PlayBreaking();
             }
         }
     }

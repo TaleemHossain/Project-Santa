@@ -9,6 +9,7 @@ public class Mainmenu : MonoBehaviour
     [SerializeField] GameObject PausePanel;
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private GameObject videoCanvas;
+    AudioManager audioManager;
     bool isPaused;
     void Awake()
     {
@@ -23,16 +24,23 @@ public class Mainmenu : MonoBehaviour
             levels[i].interactable = true;
         }
     }
+    void Start()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+    }
     public void PlayGame()
     {
+        audioManager.PlayClick();
         SceneManager.LoadSceneAsync(1);
     }
     public void ExitGame()
     {
+        audioManager.PlayClick();
         Application.Quit();
     }
     public void LoadLevel(int i)
     {
+        audioManager.PlayClick();
         if (isPaused)
         {
             PauseMenu();
@@ -41,9 +49,10 @@ public class Mainmenu : MonoBehaviour
     }
     public void PlayLevel1WithIntro()
     {
+        audioManager.PlayClick();
         foreach (Button b in levels)
             b.interactable = false;
-
+        audioManager.bgm.Pause();
         videoCanvas.SetActive(true);
         videoPlayer.Play();
 
@@ -52,14 +61,12 @@ public class Mainmenu : MonoBehaviour
     void OnIntroFinished(VideoPlayer vp)
     {
         videoPlayer.loopPointReached -= OnIntroFinished;
-
-        videoCanvas.SetActive(false);
-
         SceneManager.LoadSceneAsync(2);
     }
 
     public void ReloadLevel()
     {
+        audioManager.PlayClick();
         if (isPaused)
         {
             PauseMenu();
@@ -84,6 +91,7 @@ public class Mainmenu : MonoBehaviour
 
     public void PauseMenu()
     {
+        audioManager.PlayClick();
         if (PausePanel == null) return;
         if (!isPaused)
         {

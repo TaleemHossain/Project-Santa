@@ -35,12 +35,14 @@ public class PlayerMovement : MonoBehaviour
     bool icePlatforms = false;
     public bool inRocket = false;
     public bool canUseAbility = true;
+    AudioManager audioManager;
     void Start()
     {
         rb = transform.GetComponent<Rigidbody2D>();
         spriteRenderer = transform.GetComponent<SpriteRenderer>();
         capsuleCollider = transform.GetComponent<CapsuleCollider2D>();
         animator = transform.GetComponent<Animator>();
+        audioManager = FindAnyObjectByType<AudioManager>();
     }
     void Update()
     {
@@ -154,6 +156,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
+            audioManager.PlayJump();
         }
     }
     public bool IsGrounded()
@@ -168,6 +171,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (inRocket) return;
         inRocket = true;
+        audioManager.PlayRocket();
         if (code == 0) Rocket = jumpRocket;
         else if (code == 1)
         {

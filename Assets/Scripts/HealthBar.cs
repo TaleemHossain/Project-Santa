@@ -5,9 +5,11 @@ public class HealthBar : MonoBehaviour
     [SerializeField] float maxHealth = 1000f;
     float currentHealth;
     Animator animator;
+    AudioManager audioManager;
     bool isDead = false;
     void Start()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         currentHealth = maxHealth;
         animator = transform.GetComponent<Animator>();
     }
@@ -19,8 +21,20 @@ public class HealthBar : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        if(gameObject.CompareTag("Enemy") || gameObject.CompareTag("Player"))
+        {
+            audioManager.PlayHurt();
+        }
         if (currentHealth <= 0 && !isDead)
         {
+            if(gameObject.CompareTag("Breakable"))
+            {
+                audioManager.PlayBreaking();
+            }
+            if(gameObject.CompareTag("Player"))
+            {
+                audioManager.PlayDeath();
+            }
             Debug.Log("Death from Damage");
             isDead = true;
             if(gameObject.GetComponent<Spawner>() != null)

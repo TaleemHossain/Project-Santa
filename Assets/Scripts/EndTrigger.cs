@@ -12,6 +12,7 @@ public class EndTrigger : MonoBehaviour
     [SerializeField] private GameObject AtnasUI;
     [SerializeField] private GameObject FinalText;
     bool isTriggered = false;
+    AudioManager audioManager;
 
     void Update()
     {
@@ -25,6 +26,7 @@ public class EndTrigger : MonoBehaviour
                 FinalText.SetActive(true);
                 StartCoroutine(WaitforSometime());
                 FinalText.SetActive(false);
+                audioManager.bgm.Pause();
                 Time.timeScale = 0f;
                 endVideo.SetActive(true);
                 endVP.Play();
@@ -39,8 +41,7 @@ public class EndTrigger : MonoBehaviour
     void OnIntroFinished(VideoPlayer vp)
     {
         endVP.loopPointReached -= OnIntroFinished;
-        endVideo.SetActive(false);
-        Time.timeScale = 1f;
         SceneManager.LoadSceneAsync(0);
+        Time.timeScale = 1f;
     }
 }

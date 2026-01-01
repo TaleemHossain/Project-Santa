@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] float maxHealth = 1000f;
@@ -23,10 +23,6 @@ public class HealthBar : MonoBehaviour
         {
             Debug.Log("Death from Damage");
             isDead = true;
-            if(gameObject.CompareTag("Player"))
-            {
-                // Scene Reload
-            }
             if(gameObject.GetComponent<Spawner>() != null)
                 gameObject.GetComponent<Spawner>().Spawn();
             if(animator != null)
@@ -42,5 +38,17 @@ public class HealthBar : MonoBehaviour
     public void DeathComplete()
     {
         Destroy(transform.gameObject);
+    }
+    public float GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+    public float GetMaxHealth()
+    {
+        return maxHealth;
+    }
+    public void PlayerDeath()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
     }
 }

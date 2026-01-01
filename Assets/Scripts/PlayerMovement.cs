@@ -1,7 +1,4 @@
 using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -210,5 +207,9 @@ public class PlayerMovement : MonoBehaviour
     public void ExitIcePlatform()
     {
         icePlatforms = false;
+    }
+    public void StopPlayer()
+    {
+        rb.linearVelocity = Vector2.zero;
     }
 }

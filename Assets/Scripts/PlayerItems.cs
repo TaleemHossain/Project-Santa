@@ -6,9 +6,11 @@ public class PlayerItems : MonoBehaviour
     [SerializeField] int dashGiftCount = 0; // code - 0
     [SerializeField] int jumpGiftCount = 0; // code - 1
     [SerializeField] float healAmount = 100f;
+    private bool NextLevel = false;
     PlayerMovement playerMovement;
     public void Start()
     {
+        NextLevel = false;
         playerMovement = transform.GetComponent<PlayerMovement>();
     }
     private void AddDashGift()
@@ -67,5 +69,25 @@ public class PlayerItems : MonoBehaviour
         {
             playerMovement.ExitRocketState();
         }
+    }
+    public bool GetNextLevel()
+    {
+        return NextLevel;
+    }
+    public void SetNextLevel()
+    {
+        NextLevel = true;
+    }
+    public void ResetNextLevel()
+    {
+        NextLevel = false;
+    }
+    public int DashRocketCount()
+    {
+        return dashGiftCount;
+    }
+    public int JumpRocketCount()
+    {
+        return jumpGiftCount;
     }
 }

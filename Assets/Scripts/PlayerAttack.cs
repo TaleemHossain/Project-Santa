@@ -49,4 +49,8 @@ public class PlayerAttack : MonoBehaviour
         hasRacket = true;
         canAttack = true;
     }
+    public bool HasRacket()
+    {
+        return hasRacket;
+    }
 }

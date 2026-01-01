@@ -341,7 +341,7 @@ MonoBehaviour:
   PlayerFeet: {fileID: 0}
   IgnoreLayer:
     serializedVersion: 2
-    m_Bits: 3712
+    m_Bits: 28288
   detectionRange: 10
   AttackPoint: {fileID: 4342870237906997094}
   attackCooldown: 5

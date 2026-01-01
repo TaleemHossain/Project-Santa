@@ -914,6 +914,7 @@ MonoBehaviour:
   Atnas: {fileID: 463118263}
   dropper: {fileID: 679493620}
   AtnasUI: {fileID: 1589563552}
+  FinalText: {fileID: 187086622}
 --- !u!4 &162103505
 Transform:
   m_ObjectHideFlags: 0
@@ -1491,6 +1492,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 148655882}
+    - target: {fileID: 7495973833743734169, guid: 6fb70ed245c3df5478741fdbd4afec3a, type: 3}
+      propertyPath: m_text
+      value: Finally It is Done. Christmas is Saved!
+      objectReference: {fileID: 0}
     - target: {fileID: 8526235239008021005, guid: 6fb70ed245c3df5478741fdbd4afec3a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1585,6 +1590,11 @@ PrefabInstance:
       addedObject: {fileID: 2123651743}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb70ed245c3df5478741fdbd4afec3a, type: 3}
+--- !u!1 &187086622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2282705462684493431, guid: 6fb70ed245c3df5478741fdbd4afec3a, type: 3}
+  m_PrefabInstance: {fileID: 187086621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &220757356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,7 +1836,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260104608}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -3344,7 +3354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd1cad815a4c3847a7a9fdc21c41175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1500
 --- !u!1 &485476727
 GameObject:
   m_ObjectHideFlags: 0
@@ -15493,7 +15503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: e8581089e32e1e94995c64e358ca3189, type: 2}
+  m_Material: {fileID: 2100000, guid: e9d7fd02f6f413141a58df0f001f4e07, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -16592,7 +16602,7 @@ VideoPlayer:
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 401c6cbbd96764145b45c1072d8a9c39, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 7a5e3f95875f5504f9f562a9fa03d529, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>

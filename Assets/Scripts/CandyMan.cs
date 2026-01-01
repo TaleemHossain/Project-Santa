@@ -11,6 +11,7 @@ public class CandyMan : MonoBehaviour
     [SerializeField] private Transform[] patrolPoints;
     [SerializeField] private float patrolWaitTime = 2f;
     bool WaitingOnPatrol = false;
+    [SerializeField] LayerMask IgnoreLayer;
     private int nextPatrolIndex;
     [Header("Detection")]
     [SerializeField] private Transform DetectionPoint;
@@ -60,7 +61,7 @@ public class CandyMan : MonoBehaviour
         if (state == 1) return;
 
         Vector2 CastDirection = transform.localScale.x < 0 ? Vector2.left : Vector2.right;
-        RaycastHit2D hitInfo = Physics2D.BoxCast(DetectionPoint.position, new Vector2(BoxCastSize, BoxCastSize), 0f, CastDirection, detectionRange);
+        RaycastHit2D hitInfo = Physics2D.BoxCast(DetectionPoint.position, new Vector2(BoxCastSize, BoxCastSize), 0f, CastDirection, detectionRange, ~IgnoreLayer);
         
         if (hitInfo.collider != null && hitInfo.collider.gameObject.CompareTag("Player"))
         {

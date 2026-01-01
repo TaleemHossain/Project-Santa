@@ -212,6 +212,9 @@ MonoBehaviour:
   - {fileID: 9017512208208759929}
   - {fileID: 706141501557508464}
   patrolWaitTime: 2
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 16384
   DetectionPoint: {fileID: 9052808109042454823}
   detectionRange: 4
   BoxCastSize: 0.75

@@ -13,7 +13,10 @@ public class EndTrigger : MonoBehaviour
     [SerializeField] private GameObject FinalText;
     bool isTriggered = false;
     AudioManager audioManager;
-
+    void Start()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+    }
     void Update()
     {
         if(Atnas == null)

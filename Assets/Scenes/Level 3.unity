@@ -965,6 +965,10 @@ PrefabInstance:
       propertyPath: IgnoreLayer.m_Bits
       value: 11904
       objectReference: {fileID: 0}
+    - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 27840
+      objectReference: {fileID: 0}
     - target: {fileID: 7495766986280457771, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.59
@@ -1696,6 +1700,10 @@ PrefabInstance:
     - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: IgnoreLayer.m_Bits
       value: 11904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 27840
       objectReference: {fileID: 0}
     - target: {fileID: 7495766986280457771, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2432,6 +2440,10 @@ PrefabInstance:
     - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: IgnoreLayer.m_Bits
       value: 11904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 27840
       objectReference: {fileID: 0}
     - target: {fileID: 7495766986280457771, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19089,6 +19101,10 @@ PrefabInstance:
       propertyPath: IgnoreLayer.m_Bits
       value: 11904
       objectReference: {fileID: 0}
+    - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 27840
+      objectReference: {fileID: 0}
     - target: {fileID: 7495766986280457771, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.59
@@ -20843,6 +20859,10 @@ PrefabInstance:
     - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: IgnoreLayer.m_Bits
       value: 11904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878697447678151715, guid: b3944244370565d42ba247c10e951566, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 27840
       objectReference: {fileID: 0}
     - target: {fileID: 7495766986280457771, guid: b3944244370565d42ba247c10e951566, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31450,6 +31470,79 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 66.98263, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &2102455631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 59.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 115908780951161064, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593854044736125311, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: m_Name
+      value: Snow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157471408996911951, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157471408996911951, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157471408996911951, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157471408996911951, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 40
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5655726da68009c4890fbcc9ca0f90ac, type: 3}
 --- !u!1 &2109488148
 GameObject:
   m_ObjectHideFlags: 0
@@ -32263,3 +32356,4 @@ SceneRoots:
   - {fileID: 1142920796}
   - {fileID: 1740448619}
   - {fileID: 1793551720}
+  - {fileID: 2102455631}

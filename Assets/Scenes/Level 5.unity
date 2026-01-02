@@ -1480,6 +1480,10 @@ PrefabInstance:
       propertyPath: Santa
       value: 
       objectReference: {fileID: 615278941}
+    - target: {fileID: 2282705462684493431, guid: 6fb70ed245c3df5478741fdbd4afec3a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2915052196377559041, guid: 6fb70ed245c3df5478741fdbd4afec3a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -18736,6 +18740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Atnas: {fileID: 463118263}
   healthFill: {fileID: 2132541250}
+  Dropper: {fileID: 679493620}
 --- !u!1 &1640730623
 GameObject:
   m_ObjectHideFlags: 0
